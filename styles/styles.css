@@ -1,0 +1,220 @@
+/* Internship 2018 Styles File */
+
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  color: #1E1B18;
+}
+
+/* Navbar */
+
+.navbar-ctn {
+  background: #FFFAFF;
+  box-shadow: 0 8px 16px -4px rgba(0, 20, 40, 0.5);
+}
+
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.navbar-brand {
+  flex: 1;
+  padding: 16px;
+  font-weight: 600;
+  color: #1E1B18;
+  font-family: 'Lato';
+}
+
+.navbar-links {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a.navbar-link {
+  display: block;
+  padding: 16px;
+  color: #3E92CC;
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-ctn {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFAFF;
+  background: linear-gradient(45deg, rgba(240, 146, 170, 0.85), rgba(62, 145, 204, 0.85)), url('../img/guyonrock.png');
+  background-position: center center, center top;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0 auto;
+  padding: 16px;
+  max-width: 960px;
+  text-align: center;
+  background-position: center right;
+  text-shadow: 0 2px 8px rgba(0, 20, 40, 0.5);
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    text-align: left;
+  }
+}
+
+.header-title {
+  font-family: 'Lato';
+}
+
+.cta-btn {
+  padding: 16px 48px;
+  background: #D8315B;
+  border-radius: 8px;
+  box-shadow: 0 16px 32px -8px rgba(0, 20, 40, 0.5);
+}
+
+/* About Section */
+
+.about {
+  min-height: 20vh;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icon i {
+  font-size: 3em;
+}
+
+.about-text {
+  flex: 1;
+  padding: 32px;
+  line-height: 1.4;
+}
+
+/* Pricing Section */
+
+.pricing-ctn {
+  background: #3E92CC;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+h2.pricing-title {
+  color: #FFFAFF;
+}
+
+.pricing-prices {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .pricing-prices {
+    flex-direction: row;
+  }
+}
+
+.pricing-price-ctn {
+  margin: 0 auto;
+  padding: 8px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.pricing-price {
+  background: #FFFAFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 32px -8px rgba(0, 20, 40, 0.5);
+  overflow: hidden;
+}
+
+.pricing-price-header {
+  background: #1E1B18;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.header-bg-special {
+  background: linear-gradient(0deg, #D8315B, #1E1B18 60%);
+}
+
+.header-bg-special-2 {
+  background: linear-gradient(0deg, rgb(0, 195, 255), #1E1B18);
+}
+
+.pp-header-price {
+  font-size: 1.2em;
+}
+
+.pp-body-feature {
+  padding: 16px 8px;
+  opacity: 0.5;
+}
+
+.body-feature-available {
+  opacity: 1;
+}
+
+.body-feature-available:before {
+  content: '✓  ';
+  font-weight: 600;
+}
+
+/* Contact */
+
+.contact-ctn {
+  width: 100%;
+  background: #1E1B18;
+  color: #FFFAFF;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact a {
+  color: #D8315B;
+  text-decoration: none;
+}
